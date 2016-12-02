@@ -1,7 +1,7 @@
 package com.tsy.sample.permission;
 
-import android.app.Activity;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
 
 import java.util.HashMap;
 import java.util.List;
@@ -14,7 +14,7 @@ import pub.devrel.easypermissions.EasyPermissions;
  * Created by tsy on 2016/12/2.
  */
 
-public class BaseActivity extends Activity implements EasyPermissions.PermissionCallbacks {
+public class BaseActivity extends AppCompatActivity implements EasyPermissions.PermissionCallbacks {
 
     private Map<Integer, PermissionCallback> mPermissonCallbacks = new HashMap<>();
 

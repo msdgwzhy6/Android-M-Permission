@@ -1,10 +1,10 @@
 package com.tsy.sample.permission;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
@@ -14,7 +14,7 @@ import java.util.List;
 import pub.devrel.easypermissions.AppSettingsDialog;
 import pub.devrel.easypermissions.EasyPermissions;
 
-public class Main2Activity extends Activity implements View.OnClickListener, EasyPermissions.PermissionCallbacks {
+public class Main2Activity extends AppCompatActivity implements View.OnClickListener, EasyPermissions.PermissionCallbacks {
 
     //permission code
     private final int RC_STORAGE = 1; //存储文件权限申请
